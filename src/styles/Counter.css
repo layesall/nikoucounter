@@ -1,0 +1,23 @@
+.counter-component{
+  margin: 2rem 0;
+  width: 300px;
+}
+
+.counter-component h2{
+  font-size: 7rem;
+  font-weight: lighter;
+  margin: 1rem;
+}
+
+.counter-component button{
+  border: none;
+  width: 85px;
+  padding: 1rem;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.counter-component button:hover{
+  opacity: .8;
+}

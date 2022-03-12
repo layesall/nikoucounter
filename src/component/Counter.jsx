@@ -1,34 +1,22 @@
 import React, {useState} from 'react';
 
+import '../styles/Counter.css';
+
 function Counter(props) {
   
   const [counter, setCounter] = useState(0);
-
-  const numberCounter = (flag) => {
-    switch (flag) {
-      case 'u':
-        setCounter(counter + props.count)
-        break;
-      case 'd':
-        setCounter(counter - props.count)
-        break;
-      default: 
-        setCounter(0)
-        break;
-    }
-  }
 
   return (
     <div className='counter-component'>
       <h2> { counter } </h2>
 
-      <button title='Up' onClick={() => numberCounter('u') } >
+      <button title='Up' onClick={() => setCounter(counter + props.count) } >
         Up
       </button>
-      <button title='Reset' onClick={() => numberCounter() } >
+      <button title='Reset' onClick={() => setCounter(0) } >
         Reset
       </button>
-      <button title='Down' onClick={() => numberCounter('d') } >
+      <button title='Down' onClick={() => setCounter(counter - props.count) } >
         Down
       </button>
     </div>

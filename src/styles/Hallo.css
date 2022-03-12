@@ -1,0 +1,19 @@
+.hallo-component{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background: darkslategray;
+  letter-spacing: 3px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.hallo-component span {
+  text-transform: uppercase;
+}
+
+.hallo-component h3{
+  font-weight: lighter;
+  margin-top: 10px;
+}
