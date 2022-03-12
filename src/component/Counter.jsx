@@ -28,7 +28,7 @@ function Counter() {
       <button title='Reset' onClick={() => numberCounter() } >
         Reset
       </button>
-      <button title='Down' onClick={() => numberCounter('e') } >
+      <button title='Down' onClick={() => numberCounter('d') } >
         Down
       </button>
     </div>
