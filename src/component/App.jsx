@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import '../styles/App.css';
-import Counter from './Counter';
-import Hallo from './Hallo';
+import "../styles/App.css";
+import Copyright from "./Copyright";
+import Counter from "./Counter";
+import Hallo from "./Hallo";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <header className="App-header">
         <Hallo name="Toto" />
         <Counter count={1} />
+        <Copyright name="Layesall" link="www.layesall.com" />
       </header>
     </div>
   );
